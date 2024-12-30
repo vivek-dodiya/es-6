@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Spread Operator is use for sprade array or iterables
+        // Advantages of Spread Operator
+            let a = [10,20,30,40];
+            console.log(...a);
+        // we can copy the array usin spread operator
+        let b = [...a];
+        console.log(b);
+        //we can concatinate array using Spread Operator
+        let c = [...a,50,60];
+        console.log(c);
+        // we can copy array using Spread Operator
+        let d = [...a];
+        console.log(d);
+        a.push(50);
+        console.log(a);
+        // we can spread some part of array by using Spread Operator
+            //  method 1
+                let g = [...a.slice(0,2)];
+                console.log(g);
+            // method 2
+                let [one , two, ...remaining]=a
+                console.log(one);
+                console.log(two);
+                console.log(remaining);
+
+        
+
+
+        //we can also use Spread Operator for object
+        let e = {name:"Rahul",age:25};
+        let f = {...e,city:"Delhi"};
+        console.log(f);
+    </script>
+</body>
+</html>

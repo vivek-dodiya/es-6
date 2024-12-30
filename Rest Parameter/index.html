@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // we use Rest Parameter in functions
+        // with the Rest Parameter we can send any numbers of arguments
+        // Symbol :- 3 dots (...)
+        function add ( ...args){
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            };
+            document.write(sum)
+        }
+        add(10,20,30);
+        // argument keyword is not use in Arrow func. but Rest Parameter is use in arrow func.
+    </script>
+</body>
+</html>
