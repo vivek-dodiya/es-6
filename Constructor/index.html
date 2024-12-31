@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // what is Constructor in javascript
+        // Constructor is a special method in JavaScript that is used to initialize objects. It has the sam name as the class and does not have a return type, not even void.
+        // Constructor is called when an object is created from a class.
+        // It is used to set the initial state of the object.
+        // It is used to initialize the properties of the class.
+        class Employee {
+            // constructor(){
+            //     document.write("welome Employee... <br>")
+            // }
+            constructor(name, age, salary) {
+                this.name = name;
+                this.age = age;
+                this.salary = salary;
+            }
+            getData(){
+                document.write("Name: "+this.name+"<br>");
+                document.write("Age: "+this.age+"<br>");
+                document.write("Salary: "+this.salary+"<br>");
+            }
+        }
+        let emp1 = new Employee("vivek",22,45000);
+        emp1.getData();
+        let emp2 = new Employee("soham",20,50000);
+        emp2.getData();
+
+    </script>
+</body>
+</html>

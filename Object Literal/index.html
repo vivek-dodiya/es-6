@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // in Object Literal value and properties are same then we can wite only property
+        // ex.
+            let name ="vivek"
+            let obj= {
+                name
+            }
+            console.log(obj)
+            let a = "age";
+            let person = {
+                [a] : 30, // here age become property 
+                details(){ // in es6 can not need to write full structure
+                    return `person age is : ${this.age}`
+                }
+            };
+            console.log(person.age);
+            console.log(person.details());
+            console.log(person['details']()); // es6 we can call like this
+            // in es6 function can return object
+            function Show(firstName,lastName){
+                return {
+                    firstName,
+                    lastName
+                }
+            }
+            let obj2 = Show("vivek" , "dodiya");
+            console.log(obj2.firstName);
+            console.log(obj2.lastName);
+
+            console.log(Show("vivek" , "dodiya"));
+            
+    </script>
+</body>
+</html>

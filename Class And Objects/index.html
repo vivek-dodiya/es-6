@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // What is Class And Objects
+        // Classes are blueprints or templates for creating objects.
+        // Objects are instances of classes, and they have properties and methods.
+        // Classes are used to define the properties and methods of an object, while objects are used to create instances of a class.
+        // Classes are like a blueprint for creating objects, while objects are the actual instances of that blueprint
+        class Student {
+            name ; // we van create number of properties
+            welcome(){ // this is prototype method
+                document.write("welcome to the class <br>")
+            }
+        };
+        // Creating an object from a class
+        let vivek = new Student();
+        vivek.welcome(); // Accessing the properties and methods of an object
+        vivek.name = "vivek"
+        document.write(vivek.name);
+        document.write("<br>")
+
+        let soham = new Student();
+        soham.welcome();
+        // we can create number of object using same class
+    </script>
+</body>
+</html>

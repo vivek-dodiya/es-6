@@ -19,6 +19,7 @@ if(5===5){
     a = 5
 }
 document.write(a + " this is num print from block");
+console.log(a)
 
 
 let b;

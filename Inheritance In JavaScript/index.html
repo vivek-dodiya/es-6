@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // What is Inheritance In JavaScript
+        // Inheritance is a mechanism in which one object can inherit properties and methods from another object.
+        // It is a way to create a new object that is a modified version of an existing object
+        // Inheritance is useful when you want to create a new object that is similar to an existing
+        class A {
+            constructor(name) {
+                this.name = name;
+            }
+            show (){
+                document.write("Hello from parent.. <br>")
+                document.write(this.name)
+            }
+        }
+        class B extends A {
+            constructor(name,age) {
+                super(name);
+                this.age = age;
+            }
+            show2(){
+                document.write("<br>Hello from child.. <br>")
+                document.write(this.age)
+
+            }
+        }
+
+        let obj = new B("vivek",22);
+        obj.show();
+        obj.show2();
+    </script>
+</body>
+</html>

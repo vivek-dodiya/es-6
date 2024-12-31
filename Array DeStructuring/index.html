@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array DeStructuring meaning break down the array
+        // by the help of Array DeStructuring we can extract small fragments
+
+        let fruits = ["apple","banaba","grapes", "mango","orange","guava"];
+        // old way of Array DeStructuring
+        // let fruit1 = fruits[0];
+        // let fruit2 = fruits[1];
+        // let fruit3 = fruits[2];
+        // let fruit4 = fruits[3];
+        // let fruit5 = fruits[4];
+        // console.log(fruit1);
+        // console.log(fruit2);
+        // console.log(fruit3);
+        // console.log(fruit4);
+        // console.log(fruit5);
+        //  es6 verson 
+        let [fruit1,,fruit2,...allFruits] = fruits // we can use spread operator in Array DeStructuring
+        console.log(fruit1);
+        console.log(fruit2);
+        // console.log(fruit3);
+        // console.log(fruit4);
+        // console.log(fruit5);
+        console.log(allFruits);
+
+    </script>
+</body>
+</html>

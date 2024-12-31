@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculation (a,b){
+            let add = a + b;
+            let sub = a - b;
+            let mul = a * b;
+            let div = a / b;
+
+            return [add,sub,mul,div];
+        }
+        const [add,sub,mul,div] = calculation(4,5);
+        console.log("addition value - " + add);
+        console.log("substraction value - " + sub);
+        console.log("multiplication value - " + mul);
+        console.log("divide value - " + div);
+        
+    </script>
+</body>
+</html>

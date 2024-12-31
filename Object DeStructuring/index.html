@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // in Object DeStructuring  we can break down object
+        // into multiple variables
+            let person = {
+                name: 'John',
+                age: 25,
+                occupation: 'Software Engineer',
+            };
+            let { name, age, occupation } = person;
+            console.log(name);
+            console.log(age);
+            console.log(occupation);
+            //null Object DeStructuring
+            function returnNull(){
+                return null;
+            }       
+            // let { fname,lname } = returnNull() || {}; 
+            // console.log(fname);
+            // console.log(lname); // it gives undefined bacause of ||{}
+            // nested Object DeStructuring
+            let person1 = {
+                id : 1010,
+                name: {
+                    fname :"vivek",
+                    lname: "dodiya"
+                },
+                age: 25,
+                gender : "male"
+            }
+                //nested Object DeStructuring
+            let {
+                name :{
+                    fname,lname
+                }
+            } = person1
+            console.log(fname);
+            console.log(lname);
+    </script>
+</body>
+
+</html>
