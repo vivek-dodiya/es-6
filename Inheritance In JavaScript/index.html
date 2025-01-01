@@ -12,27 +12,31 @@
         // It is a way to create a new object that is a modified version of an existing object
         // Inheritance is useful when you want to create a new object that is similar to an existing
         class A {
-            constructor(name) {
+            constructor(name , surname) {
                 this.name = name;
+                this.surname = surname;
             }
             show (){
                 document.write("Hello from parent.. <br>")
-                document.write(this.name)
+                // document.write(this.name)
+                // document.write(" "+this.surname)
             }
         }
         class B extends A {
-            constructor(name,age) {
-                super(name);
+            constructor(name,surname,age) {
+                super(name,surname);
                 this.age = age;
             }
             show2(){
-                document.write("<br>Hello from child.. <br>")
-                document.write(this.age)
-
+                document.write("Hello from child.. <br>")
+                // document.write(this.name)
+                // document.write(this.age);
+                // document.write(" "+ this.surname)
+                document.write(`Hello ${this.name} ${this.surname} Your Age is ${this.age}`)
             }
         }
 
-        let obj = new B("vivek",22);
+        let obj = new B("vivek","dodiya",22);
         obj.show();
         obj.show2();
     </script>

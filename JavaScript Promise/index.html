@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // What is promise in javascript
+        // A promise is a result object that is used to handle asynchronous operations in JavaScript. It is used to handle the result of an asynchronous operation, whether it is successful or failed.
+        // A promise is a proxy for a value that may not be available yet, because we ar waiting for something else to happen before we can get that value.
+        // A promise is in one of these states: pending, fulfilled or rejected.
+        // A promise can be created in three ways: new Promise(), Promise.resolve(), Promise.reject()
+        // A promise can be chained with then() and catch() methods to handle the result of an asynchronous operation.
+        // A promise can be cancelled with the abort() method.
+        // A promise can be cancelled with the cancel() method.
+        let p = new Promise(function (resolve, reject) {
+            setTimeout(()=>{
+              let a = 1 + 2;
+            if (a == 3) {
+                resolve("Promise resolved");
+            }
+            else {
+                reject("Promise rejected");
+            }  
+            },1000)
+            
+        })
+        // console.log(p)
+        p.then((msg)=>{
+            document.write(msg)
+        }).catch((msg)=>{
+            document.write(msg)
+        })
+    </script>
+</body>
+
+</html>

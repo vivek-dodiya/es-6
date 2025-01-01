@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // what is Closure And Lexical Environment In JavaScript
+        // Closure is a function that has access to its own scope, the outer function's scope, the global scope, and the scope of the global object.
+        // Lexical Environment is the scope of a function, which is the set of variables that are in scope at a particular point in the code.
+        function f1 (){
+            var x = 10;
+            document.write(x)
+            function f2(){
+                var x = 30;
+                document.write(x)
+            }
+            f2()
+        }
+        f1()
+    </script>
+</body>
+</html>

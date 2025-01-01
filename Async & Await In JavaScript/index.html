@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // What is Async & Await In JavaScript
+        // Async & Await is a feature in JavaScript that allows us to write asynchronous code that looks and feels like synchronous code. It's a way to write asynchronous code that's easier to read and maintain.
+        // Async & Await is built on top of Promises, but it provides a more elegant and easier-to-use API for writing asynchronous code.
+        // Async & Await is a feature that's supported in modern browsers and Node.js environments.
+
+        // console.log("Hello.. 1")
+        // setTimeout(()=>{
+        //     console.log("Hello.. 2")
+        // },5000)
+        // console.log("Hello.. 3")
+
+        // function normalFun (){
+        //     return "Normal Function it return inly string"
+        // }
+        // console.log(normalFun()); // it return only string
+        // async function asyncfun() {
+        //     return "async function it return a promise"
+        // }
+        // console.log(asyncfun());
+
+        // async function example() {
+        //     console.log("Hello.. 1")
+        //     const data = await fetch("https://jsonplaceholder.typicode.com/posts");
+        //     console.log("Hello.. 2");
+        //     const posts = await data.json();
+        //     console.log("Hello.. 3");
+        //     return posts
+        // }
+        // let a = example();
+        // console.log(a)
+        // console.log("Hello.. 4");
+        // console.log("Hello.. 5");
+
+        async function example() {
+            const data = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+            const posts = await data.json();
+
+            return posts
+        }
+        example().then((result)=>{
+            console.log(result)
+        }).catch((msg)=>{
+            console.log(msg)
+        })
+        
+    </script>
+</body>
+</html>
